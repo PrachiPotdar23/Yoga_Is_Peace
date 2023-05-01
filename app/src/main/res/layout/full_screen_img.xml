@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/fullscreen_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="465dp"
+        android:scaleType="centerCrop" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:layout_below="@+id/fullscreen_imageview"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="0dp"
+        android:background="#8F7095"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/timer_textview"
+            android:layout_width="214dp"
+            android:layout_height="44dp"
+            android:text="00:00"
+            android:textColor="#360A3E"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/stop_timer_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/start_timer_button"
+            android:layout_width="102dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="#360A3E"
+            android:text="Start"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/stop_timer_button"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/stop_timer_button"
+            android:layout_width="102dp"
+            android:layout_height="69dp"
+            android:backgroundTint="#360A3E"
+            android:text="Stop "
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/start_timer_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
+
+
